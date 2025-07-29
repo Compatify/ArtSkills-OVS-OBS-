@@ -254,25 +254,25 @@
     <script>
         // Data for products, including quantity and unit cost for pricing calculation
         const rawProductData = [
-            { name: "Wood Round, 9.75x7.75x0.5\"", quantity: 222528, unitCost: 1.07, category: "Craft Surfaces" },
-            { name: "Acrylic Paint Wheel, Acrylic, Box, 30ct", quantity: 16400, unitCost: 6.05, category: "Paint" },
-            { name: "CYO, Castle/Ice Cream Truck, Assortment", quantity: 10569, unitCost: 8.58, category: "Art Activity" },
-            { name: "Wood Round, Natural, 1 ct", quantity: 54000, unitCost: 1.59, category: "Craft Surfaces" },
-            { name: "Hot Glue Gun", quantity: 27648, unitCost: 2.08, category: "Adhesives" },
-            { name: "M&C, Stick & Stamp, Celebration, 33-Piece", quantity: 16796, unitCost: 3.23, category: "Art Activity" },
-            { name: "Paint Brushes, Foam, 48ct", quantity: 7770, unitCost: 5.47, category: "Brushes" },
-            { name: "Acrylic Paint, with palette wells, 16 ct", quantity: 20688, unitCost: 1.99, category: "Paint" },
-            { name: "Canvas Boards", quantity: 41688, unitCost: 0.96, category: "Canvas" },
-            { name: "Wood Plaques, 9x12, 3ct", quantity: 6860, unitCost: 5.48, category: "Craft Surfaces" },
-            { name: "Premium Acrylic Paint, Acrylic, 18ct", quantity: 4712, unitCost: 7.98, category: "Paint" },
-            { name: "Framed Sign, Wood, 8x10\"", quantity: 28800, unitCost: 1.28, category: "Craft Surfaces" },
-            { name: "Slinging Chicken Game, FSC Mix, FSC Cert. Code: SGSCH-COC-000549, Product Classification - P3.2", quantity: 47544, unitCost: 0.75, category: "Novelty" },
-            { name: "Cardstock, Pastel, 40 ct", quantity: 23928, unitCost: 1.18, category: "Paper" },
-            { name: "Canvas Panels, 2 ct, 11x14", quantity: 22824, unitCost: 1.21, category: "Canvas" },
-            { name: "Invisiguide Foam Board, White, 20x28, 2ct", quantity: 10728, unitCost: 2.57, category: "Board" },
-            { name: "Markers, Brush Tip, 8 ct.", quantity: 24120, unitCost: 1.14, category: "Markers" },
-            { name: "Fabric Scissors", quantity: 26784, unitCost: 0.95, category: "Craft Tools" },
-            { name: "Angle Brushes, Silicone Grip, 4 ct", quantity: 28656, unitCost: 0.88, category: "Brushes" }
+            { name: "Wood Round, 9.75x7.75x0.5\"", quantity: 0, unitCost: 1.07, category: "Craft Surfaces", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Acrylic Paint Wheel, Acrylic, Box, 30ct", quantity: 16400, unitCost: 6.05, category: "Paint", imageUrl: "Acrylic Paint Wheel 30 ct.jpg" },
+            { name: "CYO, Castle/Ice Cream Truck, Assortment", quantity: 10569, unitCost: 8.58, category: "Art Activity", imageUrl: "CYOCastle Ice Cream Truck.webp" },
+            { name: "Wood Round, Natural, 1 ct", quantity: 54000, unitCost: 1.59, category: "Craft Surfaces", imageUrl: "Wood Round, Natural, 1 ct.avif" },
+            { name: "Hot Glue Gun", quantity: 27648, unitCost: 2.08, category: "Adhesives", imageUrl: "Glue Gun. jpg.jpg" },
+            { name: "M&C, Stick & Stamp, Celebration, 33-Piece", quantity: 16796, unitCost: 3.23, category: "Art Activity", imageUrl: "M&C, Stick & Stamp, Celebration, 33-Piece.tiff" },
+            { name: "Paint Brushes, Foam, 48ct", quantity: 7770, unitCost: 5.47, category: "Brushes", imageUrl: "ArtSkills-Craft-Foam-Paint-Brush-Set-4-Sizes-48-Pieces_bf8a498c-c47e-447f-96ec-06fff68bc6fe.85e872e519d804f233e225542b00855e.avif" },
+            { name: "Acrylic Paint, with palette wells, 16 ct", quantity: 20688, unitCost: 1.99, category: "Paint", imageUrl: "Acrylic Paint, with palette wells, 16 ct.avif" },
+            { name: "Canvas Boards", quantity: 0, unitCost: 0.96, category: "Canvas", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Wood Plaques, 9x12, 3ct", quantity: 0, unitCost: 5.48, category: "Craft Surfaces", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Premium Acrylic Paint, Acrylic, 18ct", quantity: 0, unitCost: 7.98, category: "Paint", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Framed Sign, Wood, 8x10\"", quantity: 0, unitCost: 1.28, category: "Craft Surfaces", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Slinging Chicken Game, FSC Mix, FSC Cert. Code: SGSCH-COC-000549, Product Classification - P3.2", quantity: 0, unitCost: 0.75, category: "Novelty", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Cardstock, Pastel, 40 ct", quantity: 0, unitCost: 1.18, category: "Paper", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Canvas Panels, 2 ct, 11x14", quantity: 0, unitCost: 1.21, category: "Canvas", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Invisiguide Foam Board, White, 20x28, 2ct", quantity: 0, unitCost: 2.57, category: "Board", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Markers, Brush Tip, 8 ct.", quantity: 0, unitCost: 1.14, category: "Markers", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Fabric Scissors", quantity: 0, unitCost: 0.95, category: "Craft Tools", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" },
+            { name: "Angle Brushes, Silicone Grip, 4 ct", quantity: 0, unitCost: 0.88, category: "Brushes", imageUrl: "https://placehold.co/150x150/FF0000/FFFFFF?text=Out+of+Stock" }
         ];
 
         let currentSort = 'default';
@@ -345,22 +345,27 @@
 
             productsToDisplay.forEach(product => {
                 const tiers = calculatePricingTiers(product.unitCost, product.quantity);
+                const isOutOfStock = product.quantity === 0;
+
                 const productCard = document.createElement('div');
                 productCard.className = 'product-card';
                 productCard.innerHTML = `
+                    <img src="${product.imageUrl}" alt="${product.name}" class="w-full h-40 object-contain mb-4 rounded-md bg-gray-50">
                     <h3 class="text-2xl font-semibold text-gray-900 mb-3">${product.name}</h3>
-                    <p class="text-gray-600 mb-2">Available Quantity: <span class="font-bold">${product.quantity.toLocaleString()}</span> units</p>
-                    <p class="text-sm text-gray-500 mb-4">(Approx. Original Unit Cost: $${product.unitCost.toFixed(2)})</p>
+                    ${isOutOfStock ?
+                        `<p class="text-red-600 font-bold mb-2">Out of Stock</p>` :
+                        `<p class="text-gray-600 mb-2">Available Quantity: <span class="font-bold">${product.quantity.toLocaleString()}</span> units</p>
+                         <p class="text-sm text-gray-500 mb-4">(Approx. Original Unit Cost: $${product.unitCost.toFixed(2)})</p>
+                         <div class="mb-4">
+                             <h4 class="text-lg font-medium text-gray-800 mb-2">Wholesale Pricing:</h4>
+                             <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4">
+                                 ${tiers.map(tier => `<li>${tier.range}: <span class="font-bold text-blue-700">${tier.price} / unit</span></li>`).join('')}
+                             </ul>
+                         </div>`
+                    }
                     
-                    <div class="mb-4">
-                        <h4 class="text-lg font-medium text-gray-800 mb-2">Wholesale Pricing:</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4">
-                            ${tiers.map(tier => `<li>${tier.range}: <span class="font-bold text-blue-700">${tier.price} / unit</span></li>`).join('')}
-                        </ul>
-                    </div>
-                    
-                    <button onclick="showSection('contact')" class="mt-auto bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-md transition-colors duration-300">
-                        Inquire About This Product
+                    <button onclick="showSection('contact')" class="mt-auto bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-md transition-colors duration-300 ${isOutOfStock ? 'opacity-50 cursor-not-allowed' : ''}" ${isOutOfStock ? 'disabled' : ''}>
+                        ${isOutOfStock ? 'Out of Stock' : 'Inquire About This Product'}
                     </button>
                 `;
                 productListDiv.appendChild(productCard);
@@ -413,24 +418,34 @@
 
             scrollingWrapper.innerHTML = ''; // Clear previous content
 
-            // Take a subset of products for the scrolling display (e.g., first 6 or a random selection)
-            const productsForScroll = rawProductData.slice(0, 8); // Example: first 8 products
+            // Filter out out-of-stock products for the scrolling display
+            const availableProducts = rawProductData.filter(product => product.quantity > 0);
+            const productsForScroll = availableProducts.slice(0, 8); // Example: first 8 available products
 
             // Create the content for the scrolling wrapper
             let contentHtml = '';
-            productsForScroll.forEach(product => {
-                // Get the lowest price tier for display in the scroller
-                const lowestPrice = calculatePricingTiers(product.unitCost, product.quantity)[2].price;
-                contentHtml += `
-                    <div class="scrolling-product-item">
-                        <p class="text-base font-semibold text-gray-900">${product.name}</p>
-                        <p class="text-sm text-gray-600 mt-1">Starting from <span class="font-bold text-blue-700">${lowestPrice}</span> / unit</p>
+            if (productsForScroll.length === 0) {
+                contentHtml = `
+                    <div class="col-span-full text-center py-10 w-full">
+                        <p class="text-lg text-gray-600 mt-4">No featured items currently available.</p>
                     </div>
                 `;
-            });
-
-            // Duplicate the content to create a seamless loop
-            scrollingWrapper.innerHTML = contentHtml + contentHtml;
+            } else {
+                productsForScroll.forEach(product => {
+                    // Get the lowest price tier for display in the scroller
+                    const lowestPrice = calculatePricingTiers(product.unitCost, product.quantity)[2].price;
+                    contentHtml += `
+                        <div class="scrolling-product-item">
+                            <img src="${product.imageUrl}" alt="${product.name}" class="w-24 h-24 object-contain mb-2 rounded-md bg-gray-50">
+                            <p class="text-base font-semibold text-gray-900">${product.name}</p>
+                            <p class="text-sm text-gray-600 mt-1">From <span class="font-bold text-blue-700">${lowestPrice}</span> / unit</p>
+                        </div>
+                    `;
+                });
+                // Duplicate the content to create a seamless loop
+                contentHtml += contentHtml;
+            }
+            scrollingWrapper.innerHTML = contentHtml;
         }
 
 
@@ -470,3 +485,4 @@
     </script>
 </body>
 </html>
+
